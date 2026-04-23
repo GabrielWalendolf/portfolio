@@ -93,7 +93,7 @@ export default function Contact() {
         {/* ── Right: form ── */}
         <motion.div variants={fadeUp} className="lg:col-span-3">
           {state?.success ? (
-            <div className="flex flex-col items-center justify-center gap-4 rounded-xl border border-border bg-surface py-16 text-center">
+            <div className="flex flex-col items-center justify-center gap-4 rounded-[10px] border-t border-border bg-surface py-16 text-center">
               <CircleCheck size={40} className="text-accent" />
               <p className="text-base font-medium text-foreground">
                 Mensagem enviada!
@@ -160,7 +160,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={pending}
-                className="flex w-fit items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+                className="flex w-fit items-center gap-2 rounded-[10px] bg-accent px-5 py-2.5 text-sm font-medium text-black transition-opacity hover:opacity-90 disabled:opacity-50"
               >
                 {pending ? "Enviando…" : "Enviar mensagem"}
                 {!pending && <ArrowRight size={16} />}

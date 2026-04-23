@@ -6,9 +6,9 @@ type Size = "sm" | "md" | "lg"
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "bg-accent text-white hover:opacity-90",
+    "bg-accent text-black hover:opacity-90",
   secondary:
-    "border border-border bg-elevated text-muted hover:border-accent/50 hover:text-foreground",
+    "border-t border-border bg-elevated text-muted hover:text-foreground",
   ghost:
     "text-muted hover:text-foreground",
 }
@@ -47,7 +47,7 @@ export default function Button({
   ...rest
 }: ButtonProps) {
   const base =
-    "inline-flex items-center gap-2 rounded-lg font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
+    "inline-flex items-center gap-2 rounded-[10px] font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
   const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`
 
   if ("href" in rest && rest.href !== undefined) {

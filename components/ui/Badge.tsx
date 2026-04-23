@@ -6,7 +6,11 @@ type BadgeProps = {
 export default function Badge({ label, className = "" }: BadgeProps) {
   return (
     <span
-      className={`inline-block rounded-full border border-border bg-elevated px-2.5 py-0.5 font-mono text-xs text-muted ${className}`}
+      className={`inline-flex items-center rounded-[10px] border-t px-4 py-2 font-badge text-sm font-semibold text-accent ${className}`}
+      style={{
+        backgroundColor: "var(--badge-bg)",
+        borderTopColor:  "var(--badge-border)",
+      }}
     >
       {label}
     </span>

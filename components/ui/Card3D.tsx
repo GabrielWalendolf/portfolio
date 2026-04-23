@@ -17,7 +17,7 @@ export default function Card3D({ children, className = "" }: Card3DProps) {
       transitionSpeed={400}
       className={className}
     >
-      <div className="h-full rounded-xl border border-border bg-surface p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/5">
+      <div className="h-full rounded-[10px] border-t border-border bg-surface p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-accent/10">
         {children}
       </div>
     </Tilt>

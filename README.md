@@ -10,7 +10,7 @@ Personal portfolio and project showcase — built with Next.js 16, TypeScript an
 | Styling | Tailwind CSS v4 |
 | Animations | Framer Motion 12 |
 | 3D Cards | react-parallax-tilt |
-| Typography | Geist (body) · JetBrains Mono (code) |
+| Typography | Geist (body) · JetBrains Mono (code) · Chathura (hero heading) · Nunito (badges) |
 | Icons | Lucide React |
 | Deploy | Vercel |
 
@@ -55,6 +55,14 @@ data/
 types/
 └── project.ts              # Project interface
 ```
+
+## Static Assets
+
+| File | Description |
+|---|---|
+| `public/logo.svg` | Header logo — replace with your own SVG. Adjust `width` / `height` in `Header.tsx` to match your file's proportions. |
+| `public/images/profile.webp` | Profile photo shown in the Hero section. Recommended: square crop, min 576 × 576 px. |
+| `public/images/projects/<slug>.png` | Project thumbnails referenced in `data/projects.ts`. |
 
 ## Getting Started
 

@@ -97,7 +97,7 @@ export default function About() {
             Engenharia de Software
           </span>
           <span className="text-sm text-muted">
-            Universidade — 2024 – presente
+            Univille — 2024 – presente
           </span>
         </div>
       </motion.section>

@@ -54,7 +54,7 @@ export default async function ProjectPage({ params }: Props) {
       </Link>
 
       {/* Thumbnail placeholder */}
-      <div className="mb-10 h-52 overflow-hidden rounded-xl border border-border bg-elevated sm:h-64">
+      <div className="mb-10 h-52 overflow-hidden rounded-[10px] border-t border-border bg-elevated sm:h-64">
         <div className="h-full w-full bg-gradient-to-br from-elevated via-surface to-background" />
       </div>
 
@@ -105,7 +105,7 @@ export default async function ProjectPage({ params }: Props) {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-lg border border-border bg-elevated px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:border-accent/50 hover:text-foreground"
+                className="flex items-center gap-2 rounded-[10px] border-t border-border bg-elevated px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:text-foreground"
               >
                 GitHub
                 <ArrowUpRight size={14} />
@@ -116,7 +116,7 @@ export default async function ProjectPage({ params }: Props) {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                className="flex items-center gap-2 rounded-[10px] bg-accent px-4 py-2.5 text-sm font-medium text-black transition-opacity hover:opacity-90"
               >
                 Ver demo
                 <ArrowUpRight size={14} />

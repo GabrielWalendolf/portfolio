@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
@@ -19,11 +20,17 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-surface/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link
-          href="/"
-          className="font-mono text-sm font-semibold tracking-wider text-foreground"
-        >
-          gw<span className="text-accent">.</span>dev
+
+        {/* Logo — coloque seu arquivo em /public/logo.svg */}
+        <Link href="/" aria-label="Início">
+          <Image
+            src="/logo.svg"
+            alt="Gabriel Walendolf"
+            width={120}
+            height={32}
+            priority
+            unoptimized
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -32,8 +39,8 @@ export default function Header() {
             <li key={href}>
               <Link
                 href={href}
-                className={`text-sm transition-colors hover:text-foreground ${
-                  pathname === href ? "text-foreground" : "text-muted"
+                className={`text-sm transition-colors hover:text-accent ${
+                  pathname === href ? "text-accent" : "text-muted"
                 }`}
               >
                 {label}
@@ -60,8 +67,8 @@ export default function Header() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`text-sm transition-colors hover:text-foreground ${
-                    pathname === href ? "text-foreground" : "text-muted"
+                  className={`text-sm transition-colors hover:text-accent ${
+                    pathname === href ? "text-accent" : "text-muted"
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >
