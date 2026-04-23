@@ -26,7 +26,7 @@ export default function Header() {
           <Image
             src="/logo.svg"
             alt="Gabriel Walendolf"
-            width={120}
+            width={200}
             height={32}
             priority
             unoptimized
