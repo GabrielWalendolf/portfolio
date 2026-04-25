@@ -52,7 +52,7 @@ export default function Contact() {
           </h1>
           <p className="mb-8 text-sm leading-relaxed text-muted">
             Tem um projeto em mente, uma oportunidade ou só quer trocar uma
-            ideia? Manda uma mensagem — costumo responder em até 48 horas.
+            ideia? Manda uma mensagem costumo responder em até 48 horas.
           </p>
 
           <ul className="space-y-4">

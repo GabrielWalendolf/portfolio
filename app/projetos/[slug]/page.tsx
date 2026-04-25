@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft, ArrowUpRight } from "lucide-react"
 import Badge from "@/components/ui/Badge"
 import { projects } from "@/data/projects"
@@ -53,9 +54,20 @@ export default async function ProjectPage({ params }: Props) {
         Projetos
       </Link>
 
-      {/* Thumbnail placeholder */}
+      {/* Thumbnail */}
       <div className="mb-10 h-52 overflow-hidden rounded-[10px] border-t border-border bg-elevated sm:h-64">
-        <div className="h-full w-full bg-gradient-to-br from-elevated via-surface to-background" />
+        {project.thumbnail ? (
+          <Image
+            src={project.thumbnail}
+            alt={project.title}
+            width={896}
+            height={256}
+            className="h-full w-full object-cover"
+            priority
+          />
+        ) : (
+          <div className="h-full w-full bg-gradient-to-br from-elevated via-surface to-background" />
+        )}
       </div>
 
       {/* Title */}

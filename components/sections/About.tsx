@@ -50,7 +50,7 @@ export default function About() {
           Olá! Sou <span className="text-foreground font-medium">Gabriel Walendolf</span>,
           estudante de Engenharia de Software apaixonado por construir produtos
           que resolvam problemas reais. Acredito que bom código vai além de
-          funcionar — ele precisa ser legível, manutenível e eficiente.
+          funcionar ele precisa ser legível, manutenível e eficiente.
         </p>
         <p className="text-base leading-relaxed text-muted">
           Tenho focado no desenvolvimento web fullstack, explorando desde
