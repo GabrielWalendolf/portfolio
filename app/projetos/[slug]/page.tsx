@@ -66,7 +66,7 @@ export default async function ProjectPage({ params }: Props) {
             priority
           />
         ) : (
-          <div className="h-full w-full bg-gradient-to-br from-elevated via-surface to-background" />
+          <div className="h-full w-full bg-linear-to-br from-elevated via-surface to-background" />
         )}
       </div>
 
